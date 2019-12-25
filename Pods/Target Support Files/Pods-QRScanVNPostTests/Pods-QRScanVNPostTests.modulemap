@@ -1,0 +1,6 @@
+framework module Pods_QRScanVNPostTests {
+  umbrella header "Pods-QRScanVNPostTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

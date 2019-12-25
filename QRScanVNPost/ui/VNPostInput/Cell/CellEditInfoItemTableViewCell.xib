@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="CellEditInfoItemTableViewCell" customModule="QRScanVNPost" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfn-Ly-D7i">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="113.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCo-c8-3rm">
+                                <rect key="frame" x="20" y="10" width="366" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Clp-Bc-ITC">
+                                <rect key="frame" x="20" y="41" width="351" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hnd-P9-Nhz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mCo-c8-3rm" firstAttribute="leading" secondItem="Yfn-Ly-D7i" secondAttribute="leading" constant="20" id="0RW-at-fJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="mCo-c8-3rm" secondAttribute="trailing" constant="5" id="Qhp-12-PMv"/>
+                            <constraint firstItem="mCo-c8-3rm" firstAttribute="top" secondItem="Yfn-Ly-D7i" secondAttribute="top" constant="10" id="Yxr-Bc-QF1"/>
+                            <constraint firstItem="Clp-Bc-ITC" firstAttribute="leading" secondItem="Yfn-Ly-D7i" secondAttribute="leading" constant="20" id="grw-u6-EYL"/>
+                            <constraint firstAttribute="trailing" secondItem="Clp-Bc-ITC" secondAttribute="trailing" constant="20" id="mN9-gZ-zQa"/>
+                            <constraint firstItem="Clp-Bc-ITC" firstAttribute="top" secondItem="mCo-c8-3rm" secondAttribute="bottom" constant="8" id="psi-T4-zTm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Yfn-Ly-D7i" secondAttribute="trailing" id="AGu-lc-2JB"/>
+                    <constraint firstItem="Yfn-Ly-D7i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BhP-mW-EuE"/>
+                    <constraint firstItem="Yfn-Ly-D7i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eIZ-HW-KBT"/>
+                    <constraint firstAttribute="bottom" secondItem="Yfn-Ly-D7i" secondAttribute="bottom" id="ofj-fg-uhY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbTitleEdit" destination="mCo-c8-3rm" id="5to-Ig-Z2s"/>
+                <outlet property="tfEdit" destination="Clp-Bc-ITC" id="U69-jj-83f"/>
+            </connections>
+            <point key="canvasLocation" x="93.599999999999994" y="122.33883058470765"/>
+        </tableViewCell>
+    </objects>
+</document>
